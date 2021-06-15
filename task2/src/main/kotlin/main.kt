@@ -2,7 +2,12 @@
  * возвращает наименьшее из трёх заданных чисел
  */
 fun min3(a: Int, b: Int, c: Int): Int {
-    return TODO()
+    return if (a <= b && a <= c)
+        a;
+    else if (b <= a && b <= c)
+        b
+    else
+        c
 }
 
 fun main() {

@@ -4,7 +4,12 @@ import kotlin.math.PI
  * возвращает наименьшее из трёх заданных чисел
  */
 fun min3(a: Int, b: Int, c: Int): Int {
-    TODO()
+    return if (a <= b && a <= c)
+        a;
+    else if (b <= a && b <= c)
+        b
+    else
+        c
 }
 
 /*
@@ -16,11 +21,11 @@ fun min3(a: Int, b: Int, c: Int): Int {
  */
 
 fun deg2rad(aDeg: Double): Double {
-    TODO()
+    return(((aDeg % 360) / 180) * PI)
 }
 
 fun rad2deg(aRad: Double): Double {
-    TODO()
+    return((aRad / PI) * 180)
 }
 
 fun main() {

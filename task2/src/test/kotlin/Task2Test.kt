@@ -4,27 +4,27 @@ import kotlin.test.assertEquals
 class Task2Test {
     @Test
     fun min3Test1() {
-        assertEquals(0, min3(2, 0, 3))
+        assertEquals(0, min3(0, 0, 3))
     }
 
     @Test
     fun min3Test2() {
-        TODO()
+        assertEquals(-2, min3(-2, 5, 3))
     }
 
     @Test
     fun min3Test3() {
-        TODO()
+        assertEquals(2, min3(2, 2, 2))
     }
 
     @Test
     fun min3Test4() {
-        TODO()
+        assertEquals(3552, min3(20000, 123456, 3552))
     }
 
     @Test
     fun min3Test5() {
-        TODO()
+        assertEquals(-6, min3(-2, -6, -3))
     }
 
 }
